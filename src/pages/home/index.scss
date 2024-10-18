@@ -1,0 +1,73 @@
+.barra{
+    background-color: gray;
+    padding: 9px;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+
+    .img{
+        width: 230px;
+        padding-right: 60px;
+        
+    }
+
+    .link{
+      
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 50px 0px 50px 90px;
+        opacity: 0.8;
+      
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.a{
+    display: flex;
+
+    .foto{
+        width: 1269px;
+    }
+
+    .text{
+        position: absolute;
+        top: 20%;
+        left: 120px;
+        font-size: 50px;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+}
+
+.b{
+    background-color: gray;
+    padding-top: 160px;
+
+    .texto{
+        font-size: 20px;
+        position: absolute;
+        left: 20px;
+        top: 600px;
+        text-align: center;
+    }
+
+   
+}
+
+.botao{
+    display: flex;
+    margin: -90px 189px 110px 940px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    justify-content: flex-end;
+    
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 20px 20px 20px;
+    color: black;
+    opacity: 0.6;
+}
