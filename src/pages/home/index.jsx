@@ -19,19 +19,51 @@ export default function home(){
     const Div3 = () => <div className='b'>
         <h1 className='texto'>São mais de 18 anos desenvolvendo projetos Web que geram resultados para as <br></br> empresas. <br></br>Desenvolvimento de Sites focados em Posicionamento da Marca no Google e <br></br> Geração de Leads.
         </h1>
-       
-    <a className='botao' href='#'>Entre em contato</a>
-    
     </div>
- 
+    
+    const Div4 = () => <div className='butao'>
+            <button id="botao" className="contact-button">
+                Entre em Contato
+            </button>
+    </div>
   
-        
+    const Div5 = () => <div className='faixa-verde'> 
+        <h1>Venha fazer seu <br></br>orçamento!</h1>
+
+        <button id="botaoo" className="contact-button">
+                Orçamento para desenvolvimento de sites 
+            </button>
+    </div>    
+
+    const Div6 = () => <div className='imagem-redonda'>
+            <img id='redondo' src='/assets/images/image.png' alt='a'></img>
+
+            <h1 className='textos'>Você vai receber não apenas um <br/> 
+                orçamento para o <br/>
+                desenvolvimento do sites <br/>
+                para sua empresa, mas uma <br/>
+                consultoria completa <br/>
+                para sua empresa se posicionar <br/>
+                corretamente frente ao seu <br/>
+                público-alvo. <br/>
+                Essa é a nossa proposta! Gerar <br/>
+                mais leads qualificados através <br/>
+                do site da sua empresa.</h1>
+    </div>
+
+
+       
+    
 
     return(
     <>
          <Div1 />
          <Div2 />
          <Div3 />
+         <Div4 />
+         <Div5 />
+         <Div6 />
+         
      </> 
          
 )       

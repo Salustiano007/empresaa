@@ -50,24 +50,122 @@
     .texto{
         font-size: 20px;
         position: absolute;
-        left: 20px;
-        top: 600px;
+        left: 50px;
+        top: 580px;
         text-align: center;
     }
 
    
 }
 
-.botao{
+.butao{
     display: flex;
-    margin: -90px 189px 110px 940px;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
-    justify-content: flex-end;
-    
 
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px 20px 20px 20px;
-    color: black;
-    opacity: 0.6;
+    .contact-button {
+        background-color: transparent; /* Cor de fundo inicial */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        margin-left: 1100px;
+        
+        padding: 15px 30px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out; /* Transição suave para todos os estados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+      }
+      
+      .contact-button:hover {
+        background-color: #7f8c93; /* Cor do botão quando o mouse passa por cima */
+        transform: scale(1.1); /* Aumenta o tamanho do botão quando hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+      }
+      
+      .contact-button:active {
+        transform: scale(1); /* Retorna ao tamanho original quando pressionado */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra reduzida ao clicar */
+      }
+    
 }
+
+#botao{
+    margin-top: -105px;
+    margin-bottom: 50px;
+}
+
+.faixa-verde{
+    display: flex;
+    background-color: #4040fb;
+
+    margin-top: 150px;
+    
+    padding-left: 120px;
+    font-size: 19px;
+
+    .contact-button {
+        background-color: transparent; /* Cor de fundo inicial */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        margin-left: 850px;
+        
+        padding: 15px 30px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out; /* Transição suave para todos os estados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+      }
+      
+      .contact-button:hover {
+        background-color: #009afa; /* Cor do botão quando o mouse passa por cima */
+        transform: scale(1.1); /* Aumenta o tamanho do botão quando hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+      }
+      
+      .contact-button:active {
+        transform: scale(1); /* Retorna ao tamanho original quando pressionado */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra reduzida ao clicar */
+      }
+
+      
+    }
+
+
+#botaoo{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-right: 30px;
+    position: absolute;
+}
+
+
+
+.imagem-redonda{
+    display: flex;
+    margin-top: 190px;
+    
+}
+
+#redondo{
+    width: 800px;
+}
+
+.textos{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 110px;
+}
+
+.homens{
+    display: flex;
+    
+  background-color: #dfdfdf; // Cor de fundo amarela
+  padding: 0.2em; // Adiciona espaçamento ao redor do texto
+  border-radius: 5px;
+}
+#homem1{
+    width: 80px;
+}
+
+
+  
