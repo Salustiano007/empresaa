@@ -319,4 +319,229 @@
     
    }
 
-   
+ /* index.scss */
+
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+//   body {
+//     font-family: Arial, sans-serif;
+//     line-height: 1.5;
+//   }
+  
+//   /* Estilos para o componente barra */
+//   .barra {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 20px;
+//     background-color: #333;
+//   }
+  
+//   .link {
+//     color: #fff;
+//     text-decoration: none;
+//     margin-right: 15px;
+//     transition: color 0.3s ease;
+//   }
+  
+//   .link:hover {
+//     color: #f0f0f0;
+//   }
+  
+//   .img {
+//     height: 50px;
+//   }
+  
+//   /* Responsividade para a barra de navegação */
+//   @media (max-width: 768px) {
+//     .barra {
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+  
+//     .link {
+//       margin: 10px 0;
+//     }
+//   }
+  
+//   /* Estilos para as seções principais */
+//   .a, .b, .faixa-verde, .imagem-redonda, .homens, .menzinho, .calendario, .final {
+//     padding: 40px;
+//     text-align: center;
+//   }
+  
+//   .foto {
+//     width: 100%;
+//     max-width: 500px;
+//     height: auto;
+//   }
+  
+//   .text {
+//     font-size: 2rem;
+//     color: #333;
+//     line-height: 1.4;
+//   }
+  
+//   .texto {
+//     font-size: 1.5rem;
+//     color: #444;
+//   }
+  
+//   /* Responsividade para as seções principais */
+//   @media (max-width: 768px) {
+//     .text {
+//       font-size: 1.5rem;
+//     }
+  
+//     .foto {
+//       max-width: 100%;
+//     }
+  
+//     .texto {
+//       font-size: 1.2rem;
+//     }
+//   }
+  
+//   /* Botão de contato */
+//   .contact-button {
+//     padding: 10px 20px;
+//     background-color: #28a745;
+//     color: white;
+//     border: none;
+//     cursor: pointer;
+//     font-size: 1rem;
+//     transition: background-color 0.3s;
+//   }
+  
+//   .contact-button:hover {
+//     background-color: #218838;
+//   }
+  
+//   /* Responsividade para o botão */
+//   @media (max-width: 768px) {
+//     .contact-button {
+//       font-size: 0.9rem;
+//       width: 100%;
+//     }
+//   }
+  
+//   /* Estilo das imagens redondas */
+//   .imagem-redonda {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+  
+//   #redondo {
+//     border-radius: 50%;
+//     width: 200px;
+//     height: 200px;
+//     object-fit: cover;
+//   }
+  
+//   /* Seções com imagens pequenas e textos */
+//   .homens, .menzinho, .calendario {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin-bottom: 20px;
+//   }
+  
+//   #homens1 {
+//     max-width: 100%;
+//     height: auto;
+//     margin-bottom: 15px;
+//   }
+  
+//   .app {
+//     font-size: 1.2rem;
+//     color: #555;
+//     line-height: 1.6;
+//   }
+  
+//   /* Responsividade para as seções com imagens pequenas e textos */
+//   @media (max-width: 768px) {
+//     .app {
+//       font-size: 1rem;
+//     }
+  
+//     #homens1 {
+//       width: 80%;
+//       height: auto;
+//     }
+//   }
+  
+//   /* Footer */
+//   .final {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     background-color: #333;
+//     color: #fff;
+//     padding: 20px;
+//   }
+  
+//   .linkk {
+//     color: #fff;
+//     text-decoration: none;
+//     margin: 0 10px;
+//   }
+  
+//   #img1 {
+//     max-height: 50px;
+//     height: auto;
+//   }
+  
+//   /* Responsividade para o footer */
+//   @media (max-width: 768px) {
+//     .final {
+//       flex-direction: column;
+//       text-align: center;
+//     }
+  
+//     .linkk {
+//       margin: 5px 0;
+//     }
+  
+//     #img1 {
+//       max-height: 40px;
+//     }
+//   }
+  
+//   /* Mobile-first para telas menores */
+//   @media (max-width: 480px) {
+//     .text {
+//       font-size: 1.2rem;
+//     }
+  
+//     .foto {
+//       max-width: 100%;
+//     }
+  
+//     .texto {
+//       font-size: 1rem;
+//     }
+  
+//     .faixa-verde h1 {
+//       font-size: 1.5rem;
+//     }
+  
+//     .contact-button {
+//       font-size: 1rem;
+//     }
+  
+//     .final {
+//       flex-direction: column;
+//       text-align: center;
+//     }
+  
+//     .linkk {
+//       margin: 5px 0;
+//     }
+//   }
+    
