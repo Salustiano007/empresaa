@@ -4,7 +4,7 @@
 
     display: flex;
     justify-content: space-between;
-    font-size: 17px;
+    font-size: 15px;
 
     .img{
         width: 230px;
@@ -27,6 +27,8 @@
     }
     }
 
+   
+
 .a{
     display: flex;
 
@@ -36,7 +38,7 @@
 
     .text{
         position: absolute;
-        top: 32%;
+        top: 25%;
         left: 120px;
         font-size: 50px;
         color: #FFFFFF;
@@ -44,21 +46,21 @@
     }
 }
 
-.b{
+ .b{
+    display: flex;
     background-color: gray;
     padding-top: 160px;
 
-    .texto{
-        font-size: 20px;
-        position: absolute;
-        left: 50px;
-        top: 670px;
-        text-align: center;
-        position: absolute;
-    }
+     .texto{
+          font-size: 20px;
+          position: absolute;
+          left: 50px;
+          top: 670px;
+          text-align: center;
+     }
 
    
-}
+ }
 
   .whats-link {
    background-color: transparent;   /* Cor padrão do WhatsApp */
@@ -85,17 +87,21 @@
      }
 }
 
+
+
    #botaoss{
     display: flex;
+    position: absolute;
     margin-left: 1100px;
     margin-top: -105px;
    }
 
 .faixa-verde{
-    display: flex;
-    background-color: #4040fb;
+    display: block;
 
-    margin-top: 360px;
+    background-color: #4040fb;
+    padding-top: 150px;
+    margin-top: 300px;
     
     padding-left: 120px;
     font-size: 19px;
@@ -107,6 +113,7 @@
         border-radius: 8px;
         margin-left: 850px;
         
+       
         padding: 15px 30px;
         font-size: 18px;
         cursor: pointer;
@@ -130,13 +137,16 @@
 
 
 #botaoo{
-    margin-top: 50px;
+    margin-top: -80px;
     margin-bottom: 60px;
     padding-right: 30px;
     position: absolute;
 }
 
-
+#kakaka{
+    margin-top: -120px;
+    
+}
 
 .imagem-redonda{
     display: flex;
@@ -291,7 +301,7 @@
 
   #link3{
     margin-top: -70px;
-    margin-left: 200px;
+    margin-left: 800px;
     color: #fff;
    
    }
@@ -303,245 +313,413 @@
     
   }
 
-  .Logo{
-   display: flex; 
-   padding-left: 400px;    
-  
- }
+
 
    #img1{
-       margin-top: -1000px;
-
-       padding-left: 390px;
-       padding-top: 1020px;
-       padding-bottom: 30px;
-       width: 9%;
+        margin-top: 30px;
+        position: absolute;
+        // padding-right: -80px;
+         margin-left: 650px;
+        //  padding-bottom: 50px;
+          width: 9%;
     
    }
 
- /* index.scss */
 
-/* Estilos Globais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+// responsivo
+        @media (max-width: 800px){
+   .barra {
+    background-color: gray;
+    padding: 0px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+   }
+     .img {
+       width: 230px;
+       padding-right: 60px;
+     }
+  
+    .link {
+      text-decoration: none;
+      color: rgb(187, 187, 187);
+      padding: 0px 0px 0px 0px;
+      opacity: 1.2;
+    
+    &:hover {
+        color: hsl(0, 0%, 100%);
+      }
+    }
+
+
+
+
+ #revoltadin2{
+    margin-left: -30px;
+ }
+
+ #revoltadin3{
+    margin-left: -30px;
+ }
+
+ #revoltadin4{
+    margin-left: -30px;
+ }
+  
+//   /* Imagem e texto principal (Div2) */
+   .a {
+     display: flex;
+     flex-direction: column; /* Para garantir que o texto fique embaixo da imagem em dispositivos menores */
+  
+     .foto {
+        width: 100%; /* Tornando a imagem responsiva */
+        height: auto;
+     }
+  
+    .text {
+      
+      top: 24%;
+      left: 30px;
+      font-size: 20px;      color: #FFFFFF;
+      opacity: 0.6;
+    
+   }
+  
+//   /* Texto informativo (Div3) */
+   .b {
+      display: flex;
+      background-color: gray;
+      padding-top: 0px;
+    
+      .texto{
+        font-size: 20px;
+        position: absolute;
+        left: 0px;
+        top: 60px;
+        text-align: center;
+   }
   }
   
-//   body {
-//     font-family: Arial, sans-serif;
-//     line-height: 1.5;
-//   }
-  
-//   /* Estilos para o componente barra */
-//   .barra {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 20px;
-//     background-color: #333;
-//   }
-  
-//   .link {
-//     color: #fff;
-//     text-decoration: none;
-//     margin-right: 15px;
-//     transition: color 0.3s ease;
-//   }
-  
-//   .link:hover {
-//     color: #f0f0f0;
-//   }
-  
-//   .img {
-//     height: 50px;
-//   }
-  
-//   /* Responsividade para a barra de navegação */
-//   @media (max-width: 768px) {
-//     .barra {
-//       flex-direction: column;
-//       align-items: flex-start;
-//     }
-  
-//     .link {
-//       margin: 10px 0;
-//     }
-//   }
-  
-//   /* Estilos para as seções principais */
-//   .a, .b, .faixa-verde, .imagem-redonda, .homens, .menzinho, .calendario, .final {
-//     padding: 40px;
+//   /* Botão de WhatsApp */
+  .whats-link {
+    // background-color: transparent;
+    // color: white;
+    // font-size: 18px;
+    // padding: 13px 35px;
+    // margin-right: 199px;
+    // margin-top: -90px;
+    // border-radius: 8px;
+    // text-decoration: none;
+    // display: inline-block;
 //     text-align: center;
-//   }
-  
-//   .foto {
-//     width: 100%;
-//     max-width: 500px;
-//     height: auto;
-//   }
-  
-//   .text {
-//     font-size: 2rem;
-//     color: #333;
-//     line-height: 1.4;
-//   }
-  
-//   .texto {
-//     font-size: 1.5rem;
-//     color: #444;
-//   }
-  
-//   /* Responsividade para as seções principais */
-//   @media (max-width: 768px) {
-//     .text {
-//       font-size: 1.5rem;
-//     }
-  
-//     .foto {
-//       max-width: 100%;
-//     }
-  
-//     .texto {
-//       font-size: 1.2rem;
-//     }
-//   }
-  
-//   /* Botão de contato */
-//   .contact-button {
-//     padding: 10px 20px;
-//     background-color: #28a745;
-//     color: white;
-//     border: none;
+//     transition: all 0.3s ease;
 //     cursor: pointer;
-//     font-size: 1rem;
-//     transition: background-color 0.3s;
+  
+//     &:hover {
+//       background-color: #2e6341;
+//       transform: scale(1.05);
+//     }
+  
+//     &:active {
+//       background-color: #099a89;
+//       transform: scale(0.98);
+//     }
+  }
+  
+//   #botaoss {
+//     display: flex;
+//     position: absolute;
+//     margin-left: 1100px;
+//     margin-top: -105px;
 //   }
   
-//   .contact-button:hover {
-//     background-color: #218838;
-//   }
+//   /* Faixa verde com botão de orçamento */
+//   .faixa-verde {
+//     display: block;
+//     background-color: #4040fb;
+//     padding-top: 150px;
+//     margin-top: 300px;
+//     padding-left: 120px;
+//     font-size: 19px;
   
-//   /* Responsividade para o botão */
-//   @media (max-width: 768px) {
 //     .contact-button {
-//       font-size: 0.9rem;
-//       width: 100%;
+//       background-color: transparent;
+//       color: white;
+//       border: none;
+//       border-radius: 8px;
+//       margin-left: 850px;
+//       padding: 15px 30px;
+//       font-size: 18px;
+//       cursor: pointer;
+//       transition: all 0.3s ease-in-out;
+//       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//     }
+  
+//     .contact-button:hover {
+//       background-color: #009afa;
+//       transform: scale(1.1);
+//       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+//     }
+  
+//     .contact-button:active {
+//       transform: scale(1);
+//       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 //     }
 //   }
   
-//   /* Estilo das imagens redondas */
+//   /* Imagem redonda */
 //   .imagem-redonda {
 //     display: flex;
-//     flex-direction: column;
-//     align-items: center;
+//     margin-top: 190px;
 //   }
   
 //   #redondo {
-//     border-radius: 50%;
-//     width: 200px;
-//     height: 200px;
-//     object-fit: cover;
-//   }
-  
-//   /* Seções com imagens pequenas e textos */
-//   .homens, .menzinho, .calendario {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     margin-bottom: 20px;
-//   }
-  
-//   #homens1 {
-//     max-width: 100%;
+//     width: 800px;
 //     height: auto;
-//     margin-bottom: 15px;
 //   }
   
-//   .app {
-//     font-size: 1.2rem;
-//     color: #555;
-//     line-height: 1.6;
+//   .textos {
+//     display: flex;
+//     margin-top: 60px;
+//     margin-left: 110px;
 //   }
   
-//   /* Responsividade para as seções com imagens pequenas e textos */
-//   @media (max-width: 768px) {
-//     .app {
-//       font-size: 1rem;
+//   /* Seção de Homens (Div7) */
+//   .homens {
+//     display: flex;
+//     position: absolute;
+//     flex-direction: column;
+//     font-size: 9px;
+//     font-weight: bold;
+//     text-align: center;
+//     color: #464646;
+//     border-radius: 20px;
+//     border: 2px solid #c6c7c8;
+//     padding: 20px;
+//     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+//     margin-top: 250px;
+//     margin-left: 90px;
+  
+//     .lalai {
+//       width: 90px;
+//       margin-left: 90px;
+//       margin-bottom: 90px;
+//       padding-left: 33px;
 //     }
   
-//     #homens1 {
-//       width: 80%;
-//       height: auto;
+//     &:hover {
+//       border-color: #4040fb;
 //     }
 //   }
   
-//   /* Footer */
+//   /* Seção de Menzinho (Div8) */
+//   .menzinho {
+//     display: flex;
+//     position: absolute;
+//     flex-direction: column;
+//     font-size: 11px;
+//     font-weight: bold;
+//     text-align: center;
+//     color: #464646;
+//     border-radius: 20px;
+//     border: 2px solid #c6c7c8;
+//     padding: 20px;
+//     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+//     margin-top: 250px;
+//     margin-left: 560px;
+  
+//     .lalau {
+//       width: 90px;
+//       margin-left: 90px;
+//       margin-bottom: 56px;
+//       padding-left: 33px;
+//     }
+  
+//     &:hover {
+//       border-color: #4040fb;
+//     }
+//   }
+  
+//   /* Seção de Calendário (Div9) */
+//   .calendario {
+//     display: flex;
+//     position: absolute;
+//     flex-direction: column;
+//     font-size: 11px;
+//     font-weight: bold;
+//     text-align: center;
+//     color: #464646;
+//     border-radius: 20px;
+//     border: 2px solid #c6c7c8;
+//     padding: 20px;
+//     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+//     margin-top: 250px;
+//     margin-left: 1030px;
+  
+//     .santos {
+//       width: 90px;
+//       margin-left: 90px;
+//       margin-bottom: 70px;
+//       padding-left: 33px;
+//     }
+  
+//     &:hover {
+//       border-color: #4040fb;
+//     }
+//   }
+  
+//   /* Rodapé (Div10) */
 //   .final {
 //     display: flex;
+//     background-color: #2d1e3d;
+//     margin-top: 900px;
+//     height: 150px;
 //     justify-content: space-between;
 //     align-items: center;
-//     background-color: #333;
-//     color: #fff;
 //     padding: 20px;
-//   }
-  
-//   .linkk {
-//     color: #fff;
-//     text-decoration: none;
-//     margin: 0 10px;
-//   }
-  
-//   #img1 {
-//     max-height: 50px;
-//     height: auto;
-//   }
-  
-//   /* Responsividade para o footer */
-//   @media (max-width: 768px) {
-//     .final {
-//       flex-direction: column;
-//       text-align: center;
-//     }
   
 //     .linkk {
-//       margin: 5px 0;
+//       color: #3498db;
+//       text-decoration: none;
+//       position: relative;
+//       transition: color 0.3s ease, transform 0.2s ease;
+  
+//       &:hover {
+//         color: #7018ce;
+//         transform: scale(1.1);
+//       }
+//     }
+  
+//     #link1 {
+//       margin-left: 200px;
+//     }
+  
+//     #link2 {
+//       margin-left: 360px;
+//     }
+  
+//     #link3 {
+//       margin-left: 800px;
+//     }
+  
+//     #link4 {
+//       margin-left: 206px;
 //     }
   
 //     #img1 {
-//       max-height: 40px;
+//       width: 9%;
+//       margin-left: 650px;
 //     }
 //   }
+  }
+}
+//   /* Media Queries para Responsividade */
   
-//   /* Mobile-first para telas menores */
-//   @media (max-width: 480px) {
-//     .text {
-//       font-size: 1.2rem;
+//   /* Para dispositivos menores que 768px (Tablets e Smartphones em modo retrato) */
+//   @media (max-width: 768px) {
+//     .barra {
+//       flex-direction: column;
+//       align-items: center;
 //     }
   
-//     .foto {
-//       max-width: 100%;
+//     .img {
+//       width: 180px;
+//       margin-bottom: 15px;
+//     }
+  
+//     .link {
+//       padding: 15px;
+//       font-size: 14px;
+//     }
+  
+//     .a {
+//       .foto {
+//         width: 100%;
+//       }
+  
+//       .text {
+//         font-size: 30px;
+//         top: 20%;
+//         left: 10%;
+//       }
 //     }
   
 //     .texto {
-//       font-size: 1rem;
+//       font-size: 16px;
+//       position: relative;
+//       top: 0;
+//       text-align: center;
 //     }
   
-//     .faixa-verde h1 {
-//       font-size: 1.5rem;
+//     .whats-link {
+//       margin-top: 20px;
+//       margin-right: 0;
 //     }
   
-//     .contact-button {
-//       font-size: 1rem;
+//     .faixa-verde {
+//       padding-left: 20px;
+//       margin-top: 50px;
+//       .contact-button {
+//         margin-left: 0;
+//         padding: 12px 20px;
+//         font-size: 16px;
+//       }
+//     }
+  
+//     .imagem-redonda {
+//       flex-direction: column;
+//       margin-top: 50px;
+//       text-align: center;
+  
+//       #redondo {
+//         width: 100%;
+//       }
+  
+//       .textos {
+//         margin-left: 0;
+//         font-size: 16px;
+//       }
+//     }
+  
+//     .homens, .menzinho, .calendario {
+//       flex-direction: column;
+//       margin-top: 30px;
+//       margin-left: 0;
+//       font-size: 14px;
 //     }
   
 //     .final {
 //       flex-direction: column;
-//       text-align: center;
+//       align-items: center;
+//       height: auto;
 //     }
   
-//     .linkk {
-//       margin: 5px 0;
+//     #img1 {
+//       width: 50%;
+//       margin-left: 0;
 //     }
 //   }
-    
+  
+//   /* Para dispositivos menores que 480px (Smartphones em modo retrato) */
+   @media (max-width: 480px) {
+     .text {
+       font-size: 24px;
+     }
+  
+    .texto {
+               font-size: 14px;
+     }
+  
+    .faixa-verde {
+       font-size: 16px;
+     }
+  
+    .final {
+      height: auto;
+       .linkk {
+         font-size: 14px;
+         margin-bottom: 10px;
+      }
+    }
+  }
